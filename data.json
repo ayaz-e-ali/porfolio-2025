@@ -1,0 +1,29 @@
+{
+    "projects": [
+        {
+            "title": "XChange",
+            "description": "A full-stack currency exchange app built with Next.js. authentication and role-based access, and secure admin features.",
+            "image": "/images/xchange.png"
+        },
+        {
+            "title": "Hotel ease",
+            "description": "A simple hotel booking website built with Next.js. browsing, viewing, and reserving rooms with detailed listings and image galleries.",
+            "image": "/images/hotelease.png"
+        },
+        {
+            "title": "Blogify",
+            "description": "A full-stack blog sharing website built with React and Node.js, write blogs in a rich text editor with predefined tags and share them with other users.",
+            "image": "/images/blogify.png"
+        },
+        {
+            "title": "Inteo",
+            "description": "A full-stack currency exchange app built with Next.js and Node.js. Real-time conversion, role-based access, and secure admin features.",
+            "image": "/images/inteo.png"
+        },
+        {
+            "title": "Jewels",
+            "description": "A single page website built with React, a brand with collections of different type of jewelry.",
+            "image": "/images/jewels.png"
+        }
+    ]
+}

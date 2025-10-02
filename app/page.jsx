@@ -2,6 +2,7 @@ import { Button } from "@/components/button";
 import Card from "@/components/card";
 import { ArrowRight, ArrowUpRightFromSquare } from "lucide-react";
 import Link from "next/link";
+import data from '@/data.json'
 
 export default function Home() {
   return (
@@ -31,13 +32,11 @@ export default function Home() {
         <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans mt-10 lg:mt-20">
           Projects
         </h4>
-    {/* grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 */}
         <div className="flex flex-wrap justify-center w-5/6 mx-auto gap-4 ">
-          <Card title={'XChange'} description={'A full-stack currency exchange app built with Next.js. authentication and role-based access, and secure admin features.'} />
-          <Card title={'Hotel ease'} description={'A simple hotel booking website built with Next.js. browsing, viewing, and reserving rooms with detailed listings and image galleries  '} />
-          <Card title={'Blogify'} description={'A full-stack blog sharing website built with React and Node.js, write blogs in a rich text editor with predefined tags and share them with other users'} />
-          <Card title={'Inteo'} description={'A full-stack currency exchange app built with Next.js and Node.js. Real-time conversion, role-based access, and secure admin features.'} />
-          <Card title={'Jewels'} description={'A single page website built with React, a brand with collections of different type of jewelry.'} />
+          {
+            data.projects.map(project =>
+              <Card key={project.title} title={project.title} description={project.description} />)
+          }
         </div>
       </div>
 
