@@ -3,6 +3,7 @@ import Card from "@/components/card";
 import { ArrowRight, ArrowUpRightFromSquare } from "lucide-react";
 import Link from "next/link";
 import data from '@/data.json'
+import ContactForm from "@/components/contactform";
 
 export default function Home() {
   return (
@@ -27,21 +28,23 @@ export default function Home() {
         </div>
       </div>
 
-      {/* projects */}
       <div id="projects" className="scroll-mt-10 mt-8 space-y-8">
-        <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans mt-10 lg:mt-20">
+        <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans lg:mt-20">
           Projects
         </h4>
-        <div className="flex flex-wrap justify-center w-5/6 mx-auto gap-4 ">
+        <div className="flex flex-wrap justify-center w-11/12 mx-auto gap-4">
           {
             data.projects.map(project =>
-              <Card key={project.title} title={project.title} description={project.description} />)
+              <Card key={project.title} title={project.title} description={project.description} image={project.image} />)
           }
         </div>
       </div>
 
-      <div id="contact" className="scroll-mt-10 h-96">
-
+      <div id="contact" className="scroll-mt-10 my-16">
+        <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans lg:mt-20">
+          Contact
+        </h4>
+        <ContactForm />
       </div>
     </>
   );

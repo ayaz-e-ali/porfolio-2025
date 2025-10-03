@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Card({ title, description }) {
+export default function Card({ title, description, image }) {
     return (
-        <div className="border-neutral-700 max-w-[22rem] border rounded-xl overflow-hidden shadow-md transition duration-300 flex flex-col hover:bg-neutral-900">
+        <div className="border-neutral-700 max-w-[25rem] border rounded-xl overflow-hidden shadow-md transition duration-300 flex flex-col hover:bg-neutral-900">
             <img
-                src="https://dummyimage.com/600x600/ffffff/000000"
+                src={image}
                 alt="Project screenshot"
-                className="w-full aspect-square object-cover"
+                className="w-full object-cover"
             />
             <div className="p-5 flex flex-col justify-between h-full">
                 <div>
