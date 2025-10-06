@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import React from 'react'
 
-export default function Card({ title, description, image }) {
+export default function Card({ title, description, image, id }) {
     return (
         <div className="border-neutral-700 max-w-[25rem] border rounded-xl overflow-hidden shadow-md transition duration-300 flex flex-col hover:bg-neutral-900">
             <img
@@ -16,12 +17,13 @@ export default function Card({ title, description, image }) {
                     </p>
                 </div>
                 <div className="mt-4">
-                    <a
-                        href="#"
+                    <Link
+                        href={`/${id}`}
                         className="text-blue-400 hover:text-blue-300 text-sm font-medium underline"
+                        target='_blank'
                     >
                         View Project →
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

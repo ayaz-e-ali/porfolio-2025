@@ -18,7 +18,7 @@ export default function Home() {
             I'm a {new Date().getFullYear() - 2002}-year-old full-stack web developer based in Northeast Syria with 3+ years of experience building fast, modern web applications. I specialize in React, Node.js, and Next.js, and enjoy creating projects that solve challenging problems. I’m always learning and ready to bring my skills to global teams and projects.
           </p>
           <div className="space-x-4 flex justify-center lg:justify-start">
-            <Link href={'/projects'}>
+            <Link href={'#projects'}>
               <Button className={"hover:child:translate-x-1"}>View My Work <ArrowRight size={22} className="inline transition-transform" /></Button>
             </Link>
             <Link href={'/resume.pdf'} rel="noopener noreferrer" target="_blank">
@@ -35,13 +35,13 @@ export default function Home() {
         <div className="flex flex-wrap justify-center w-11/12 mx-auto gap-4">
           {
             data.projects.map(project =>
-              <Card key={project.title} title={project.title} description={project.description} image={project.image} />)
+              <Card key={project.id} title={project.title} description={project.description} image={project.image} id={project.id}/>)
           }
         </div>
       </div>
 
       <div id="contact" className="scroll-mt-10 my-16">
-        <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans lg:mt-20">
+        <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans mb-6 lg:mt-20">
           Contact
         </h4>
         <ContactForm />
