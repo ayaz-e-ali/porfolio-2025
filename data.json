@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": "16719a5b-a9dd-43f9-97a6-afedb22fe6bc",
+      "id": "mingle",
       "title": "Mingle",
       "subtitle": "Modern Social media platform built with Next.js",
       "description": "Mingle is an interactive social media web application designed to simulate a similar environment to well-known social media platforms. It focuses on a seamless experience for users to share their ideas with posts, interacting with other users by liking posts, and sharing opinions with comments.",
@@ -24,7 +24,7 @@
       "demo": "https://mingle.portmap.io:54442/"
     },
     {
-      "id": "9bc45b94-f1ff-4ff9-8efc-b934e9718f38",
+      "id": "xchange",
       "title": "XChange",
       "description": "XChange is a full-stack currency exchange application built with Next.js and Node.js. It supports real-time currency conversion, authentication, role-based access, and secure admin features for managing rates and users.",
       "features": [
@@ -46,7 +46,7 @@
       "demo": "https://xchange.portmap.io:51328/"
     },
     {
-      "id": "23319d09-956a-4960-8630-b8b14d191b68",
+      "id": "hotelease",
       "title": "HotelEase",
       "description": "HotelEase is a sleek and efficient hotel booking web application designed to make room browsing and reservation simple and fast. It provides a seamless interface for users to explore hotels, view detailed room listings, check availability, and confirm bookings.",
       "features": [
@@ -66,7 +66,7 @@
       "demo": "https://hotelease.vercel.app"
     },
     {
-      "id": "090e113d-da56-4db7-800d-eafc8abdffc0",
+      "id": "inteo",
       "title": "Inteo",
       "subtitle": "Modern interior design landing page",
       "description": "A responsive, animated single-page website built with React, Vite, and Tailwind CSS, showcasing services, works, awards, and a bold hero CTA.",
@@ -86,7 +86,7 @@
       "demo": "https://inteo.portmap.io:29736/"
     },
     {
-      "id": "117e1c1c-c5e9-4b11-9210-132dca949775",
+      "id": "jewels",
       "title": "Jewels",
       "subtitle": "Elegant, responsive storefront UI built with React",
       "description": "A polished single-page jewellery storefront featuring curated collections, hero marketing, and social proof. Built with React, TypeScript, and Tailwind CSS using Vite for a fast development and build pipeline.",
