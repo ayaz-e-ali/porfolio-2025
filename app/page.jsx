@@ -35,7 +35,7 @@ export default function Home() {
       </div>
 
       <div id="projects" className="scroll-mt-10 mt-8 space-y-8">
-        <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans lg:mt-20">
+        <h4 className="text-2xl text-center pb-6 lg:text-5xl font-bold font-sans lg:mt-20">
           Projects
         </h4>
         <div className="flex flex-wrap justify-center w-11/12 mx-auto gap-4">
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
 
       <div id="contact" className="scroll-mt-10 my-16">
-        <h4 className="text-2xl text-center lg:text-left lg:text-5xl font-bold font-sans mb-6 lg:mt-20">
+        <h4 className="text-2xl text-center pb-6 lg:text-5xl font-bold font-sans mb-6 lg:mt-20">
           Contact
         </h4>
         <ContactForm />

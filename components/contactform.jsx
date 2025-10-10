@@ -17,7 +17,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="w-11/12 mx-auto space-y-4">
+        <form onSubmit={handleSubmit} className="w-2/3 mx-auto space-y-2">
             <input
                 type="text"
                 name="name"
@@ -25,7 +25,7 @@ export default function ContactForm() {
                 value={form.name}
                 onChange={handleChange}
                 required
-                className="w-full outline-0 p-2 border-b border-neutral-700 focus:border-neutral-400"
+                className="w-full outline-0 rounded-xl p-3 border border-neutral-700 focus:border-neutral-400"
             />
 
             <input
@@ -35,7 +35,7 @@ export default function ContactForm() {
                 value={form.email}
                 onChange={handleChange}
                 required
-                className="w-full outline-0 p-2 border-b border-neutral-700 focus:border-neutral-400"
+                className="w-full outline-0 rounded-xl p-3 border border-neutral-700 focus:border-neutral-400"
             />
 
             <textarea
@@ -45,7 +45,7 @@ export default function ContactForm() {
                 value={form.message}
                 onChange={handleChange}
                 required
-                className="w-full outline-0 p-2 border-b border-neutral-700 focus:border-neutral-400"
+                className="w-full outline-0 rounded-xl p-3 border border-neutral-700 focus:border-neutral-400"
             />
 
             <Button type="submit">Send</Button>
