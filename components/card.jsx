@@ -12,7 +12,7 @@ export default function Card({ title, description, image, id }) {
             <div className="p-5 flex flex-col justify-between h-full">
                 <div>
                     <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    <p className="text-neutral-300 text-sm leading-relaxed">
                         {description}
                     </p>
                 </div>
