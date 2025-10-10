@@ -63,7 +63,7 @@
       ],
       "image": "/images/hotelease.webp",
       "github": "https://github.com/ayaz/hotelease",
-      "demo": "https://hotelease.vercel.app"
+      "demo": "https://hotelease.portmap.io:31091/"
     },
     {
       "id": "inteo",
@@ -83,7 +83,7 @@
       ],
       "image": "/images/inteo.webp",
       "github": "https://github.com/ayaz-e-ali/Inteo",
-      "demo": "https://inteo.portmap.io:29736/"
+      "demo": "https://inteo.vercel.app/"
     },
     {
       "id": "jewels",
@@ -103,7 +103,7 @@
       ],
       "image": "/images/jewels.webp",
       "github": "https://github.com/ayaz-e-ali/JEWELS",
-      "demo": "https://jewels.portmap.io:26480/"
+      "demo": "https://jewels-swart.vercel.app/"
     }
   ]
 }
