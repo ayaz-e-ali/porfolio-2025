@@ -3,7 +3,7 @@
 :root {
   --background: hsl(0, 0%, 4%);
   --foreground: hsl(0, 0%, 93%);
-  --card-background: hsl(0, 0%, 7%) ;
+  --card-background: hsl(0, 0%, 7%);
 }
 
 @theme inline {
@@ -35,4 +35,19 @@ body {
 
 .container {
   @apply max-w-[100%] md:max-w-[540%] lg:max-w-[992px] xl:max-w-[1200px] 2xl:max-w-[1400px] sm:min-w-[650px] mx-auto px-6;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: inline-flex;
+  animation: scroll 15s linear infinite;
 }

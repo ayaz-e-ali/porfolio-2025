@@ -17,7 +17,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="w-2/3 mx-auto space-y-2">
+        <form onSubmit={handleSubmit} className="lg:w-2/3 mx-auto flex flex-col gap-2">
             <input
                 type="text"
                 name="name"
@@ -48,7 +48,7 @@ export default function ContactForm() {
                 className="w-full outline-0 rounded-xl p-3 border border-neutral-700 focus:border-neutral-400"
             />
 
-            <Button type="submit">Send</Button>
+            <Button type="submit" className={'lg:place-self-start'}>Send</Button>
         </form>
     );
 }

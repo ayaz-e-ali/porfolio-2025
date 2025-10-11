@@ -4,6 +4,7 @@ import { ArrowDown, ArrowRight, ArrowUpRightFromSquare } from "lucide-react";
 import Link from "next/link";
 import data from '@/data.json'
 import ContactForm from "@/components/contactform";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
@@ -43,6 +44,15 @@ export default function Home() {
             data.projects.map(project =>
               <Card key={project.id} title={project.title} description={project.description} image={project.image} id={project.id} />)
           }
+        </div>
+      </div>
+
+      <div id="skills" className="scroll-mt-10 mt-8 space-y-8">
+        <h4 className="text-2xl text-center pb-6 lg:text-5xl font-bold font-sans lg:mt-20">
+          Tech Stack
+        </h4>
+        <div className="flex flex-wrap justify-center w-11/12 mx-auto gap-4">
+          <Skills />
         </div>
       </div>
 

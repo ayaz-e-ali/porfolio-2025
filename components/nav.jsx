@@ -8,6 +8,7 @@ export default function Nav() {
             <ul className='hidden lg:flex gap-8 text-lg font-sans'>
                 <Link href={'#about'}><ListItem>About</ListItem></Link>
                 <Link href={'#projects'}><ListItem>Projects</ListItem></Link>
+                <Link href={'#skills'}><ListItem>Tech Stack</ListItem></Link>
                 <Link href={'#contact'}><ListItem>Contact</ListItem></Link>
             </ul>
         </div>

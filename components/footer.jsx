@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col border-t border-neutral-700 pt-12 pb-6 font-sans space-y-8">
+        <footer className="flex flex-col border-t-2 border-neutral-700 pt-12 pb-6 font-sans space-y-8">
             <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between container lg:w-3/4 lg:mx-auto">
                 <div className='space-y-4'>
                     <div className="flex gap-3">
@@ -32,6 +32,7 @@ export default function Footer() {
                     <ul className='flex flex-col gap-2'>
                         <Link href={'#about'}><ListItem>About</ListItem></Link>
                         <Link href={'#projects'}><ListItem>Projects</ListItem></Link>
+                        <Link href={'#skills'}><ListItem>Tech Stack</ListItem></Link>
                         <Link href={'#contact'}><ListItem>Contact</ListItem></Link>
                     </ul>
                 </div>
@@ -64,7 +65,7 @@ export default function Footer() {
 
 function ListItem({ children }) {
     return (
-        <li className='text-md text-neutral-300 font-semibold cursor-pointer hover:opacity-85 transition-opacity duration-300'>
+        <li className='text-md underline underline-offset-4 text-neutral-300 font-semibold cursor-pointer hover:opacity-85 transition-opacity duration-300'>
             {children}
         </li>
     );
