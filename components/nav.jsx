@@ -4,7 +4,9 @@ import React from 'react'
 export default function Nav() {
     return (
         <div className='container py-6 flex justify-center lg:justify-between items-center'>
-            <h1 className="text-2xl font-serif">AYAZ ALÎ</h1>
+            <Link href={'/'}>
+                <h1 className="text-2xl font-serif cursor-pointer">AYAZ ALÎ</h1>
+            </Link>
             <ul className='hidden lg:flex gap-8 text-lg font-sans'>
                 <Link href={'#about'}><ListItem>About</ListItem></Link>
                 <Link href={'#projects'}><ListItem>Projects</ListItem></Link>
