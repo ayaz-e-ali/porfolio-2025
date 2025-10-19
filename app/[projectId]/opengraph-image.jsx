@@ -30,7 +30,8 @@ export default async function Image({ params }) {
                 }}
             >
                 <img src="http://localhost:3000/ayaz.png" style={{
-                    height: "300"
+                    height: "300",
+                    width: "300",
                 }} />
                 <p>
                     {project.title}

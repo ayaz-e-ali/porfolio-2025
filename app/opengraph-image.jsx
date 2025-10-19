@@ -28,7 +28,8 @@ export default async function Image({ params }) {
                 }}
             >
                 <img src="http://localhost:3000/ayaz.png" style={{
-                    height: "300"
+                    height: "300",
+                    aspectRatio: "1/1",
                 }} />
                 <p>
                     Ayaz ali
