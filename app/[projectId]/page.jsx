@@ -3,9 +3,26 @@ import data from '@/data.json'
 import Image from 'next/image';
 import Link from 'next/link';
 import { ExternalLink, Github } from 'lucide-react';
+import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
     return data.projects.map(project => ({ projectId: project.id }));
+}
+
+export async function generateMetadata({ params }) {
+    const { projectId } = await params;
+    const project = data.projects.find(p => p.id === projectId);
+    if (!project) {
+        return {
+            title: 'Project Not Found',
+            description: 'The project you are looking for does not exist.',
+        };
+    } else {
+        return {
+            title: project.title,
+            description: project.subtitle,
+        };
+    }
 }
 
 export default async function page({ params }) {
@@ -13,10 +30,7 @@ export default async function page({ params }) {
     const project = data.projects.find(p => p.id === projectId);
 
     if (!project) {
-        return <div className="text-center mt-20">
-            <h2 className="text-2xl font-bold">Project Not Found</h2>
-            <p className="text-gray-600 mt-2">The project you are looking for does not exist.</p>
-        </div>
+        return notFound()
     }
 
     return (

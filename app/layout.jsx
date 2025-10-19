@@ -13,9 +13,18 @@ const sourceSans = Source_Sans_3({
   subsets: ["latin"],
 });
 
+/**
+ * @type 
+ */
 export const metadata = {
-  title: "Ayaz portfolio",
+  title: {
+    default: "Ayaz Alî - Full-Stack Web Developer",
+    template: "%s | Ayaz Alî",
+  },
   description: "Ayaz's personal portfolio website showcasing projects and skills.",
+  twitter: {
+    card: "summary_large_image"
+  }
 };
 
 export default function RootLayout({ children }) {
