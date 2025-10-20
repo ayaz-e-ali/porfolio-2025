@@ -1,4 +1,4 @@
-import { Github, Mail, MapPin } from 'lucide-react'
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -11,13 +11,20 @@ export default function Footer() {
                         <h3 className="text-3xl font-bold">
                             Ayaz Ali
                         </h3>
-                        <a
+                        <Link
                             href={"https://github.com/ayaz-e-ali"}
                             target="_blank"
                             className="p-2 rounded-full bg-neutral-900 border border-neutral-800 hover:border-gray-600 hover:bg-neutral-800 transition"
                         >
                             <Github className="w-5 h-5 text-gray-300" />
-                        </a>
+                        </Link>
+                        <Link
+                            href={"https://www.linkedin.com/in/ayaz-al%C3%AE"}
+                            target="_blank"
+                            className="p-2 rounded-full bg-neutral-900 border border-neutral-800 hover:border-gray-600 hover:bg-neutral-800 transition"
+                        >
+                            <Linkedin className="w-5 h-5 text-gray-300" />
+                        </Link>
                     </div>
 
                     <p className="text-md text-neutral-300 font-semibold">
