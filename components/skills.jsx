@@ -5,9 +5,12 @@ import {
 } from 'react-icons/io5'
 import {
     SiExpress, SiMantine, SiNextdotjs, SiSocketdotio, SiNginx,
-    SiMongodb, SiSqlite, SiPrisma, SiPostgresql, SiRedux
+    SiMongodb, SiSqlite, SiPrisma, SiPostgresql, SiRedux,
+    SiDocker
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
+import { FaAws } from 'react-icons/fa6';
+import { VscGithubAction } from 'react-icons/vsc';
 
 export default function Skills() {
     const items = [
@@ -16,10 +19,13 @@ export default function Skills() {
         [<IoLogoCss3 />, 'CSS3'],
         [<SiExpress />, 'Express'],
         [<SiMantine />, 'Mantine'],
-        [<SiNextdotjs />, 'Next'],
+        [<SiDocker />, 'Docker'],
+        [<VscGithubAction />, 'CI/CD'],
+        [<SiNextdotjs />, 'NextJS'],
         [<IoLogoNodejs />, 'NodeJS'],
-        [<IoLogoReact />, 'React'],
         [<SiRedux />, 'Redux'],
+        [<IoLogoReact />, 'React'],
+        [<FaAws />, 'AWS'],
         [<SiSocketdotio />, 'Socket'],
         [<SiNginx />, 'Nginx'],
         [<SiMongodb />, 'MongoDB'],

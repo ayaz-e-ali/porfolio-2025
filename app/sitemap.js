@@ -1,10 +1,11 @@
-import data from '@/data.json'
+import { getData } from '@/actions/data';
 
 /**
  * 
  * @returns {import('next').MetadataRoute.Sitemap}
  */
-export default function sitemap() {
+export default async function sitemap() {
+    const data = await getData();
     const projectsEntries = data.projects.map(project => ({
         url: `${process.env.NEXT_PUBLIC_BASE_URL}${project.id}`,
     }))

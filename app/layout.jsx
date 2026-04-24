@@ -22,6 +22,7 @@ export const metadata = {
     template: "%s | Ayaz Alî",
   },
   description: "Ayaz's personal portfolio website showcasing projects and skills.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   twitter: {
     card: "summary_large_image"
   }

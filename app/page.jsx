@@ -2,29 +2,34 @@ import { Button } from "@/components/button";
 import Card from "@/components/card";
 import { ArrowDown, ArrowRight, ArrowUpRightFromSquare } from "lucide-react";
 import Link from "next/link";
-import data from '@/data.json'
 import ContactForm from "@/components/contactform";
 import Skills from "@/components/skills";
+import axios from "axios";
+import { getData } from "@/actions/data";
 
-export default function Home() {
+export const dynamic = 'force-static';
+
+export default async function Home() {
+  const data = await getData();
+  
   return (
     <>
       {/* about */}
-      <div id="about" className="relative scroll-mt-20 grid grid-cols-1 lg:grid-cols-2 h-[80vh] max-h-[40rem]">
+      <div id="about" className="relative scroll-mt-20 grid grid-cols-1 lg:grid-cols-2 h-[90vh]">
         <div className="space-y-8">
-          <h3 className="text-4xl text-center lg:text-left lg:text-7xl font-bold font-sans mt-10 lg:mt-20">
+          <h3 className="text-4xl text-center lg:text-left lg:text-7xl font-bold font-sans mt-10 lg:mt-[10vh]">
             FULL-STACK <br /> WEB DEVELOPER
           </h3>
           <p className="text-lg text-neutral-300 font-sans text-center lg:text-left">
-            I'm a {new Date().getFullYear() - 2002}-year-old full-stack web developer based in Northeast Syria with 3+ years of experience building fast, modern web applications. I specialize in React, Node.js, and Next.js, and enjoy creating projects that solve challenging problems. I’m always learning and ready to bring my skills to global teams and projects.
+            {data.hero.hero}
           </p>
           <div className="space-x-4 flex justify-center lg:justify-start">
             <Link href={'#projects'}>
               <Button className={"hover:child:translate-x-1"}>View My Work <ArrowRight size={22} className="inline transition-transform" /></Button>
             </Link>
-            <Link href={'/resume.pdf'} rel="noopener noreferrer" target="_blank">
+            <a href={data.hero.resume} target="_blank" rel="noopener noreferrer">
               <Button variant={'outline'}>View Resume <ArrowUpRightFromSquare size={22} className="inline ml-2" /> </Button>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="absolute text-neutral-400 bottom-0 left-1/2 -translate-1/2 flex flex-col gap-2 items-center">

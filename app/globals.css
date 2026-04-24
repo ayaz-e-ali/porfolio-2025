@@ -49,5 +49,5 @@ body {
 
 .animate-scroll {
   display: inline-flex;
-  animation: scroll 15s linear infinite;
+  animation: scroll 30s linear infinite;
 }

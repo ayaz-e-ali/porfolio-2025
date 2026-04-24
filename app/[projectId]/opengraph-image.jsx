@@ -1,5 +1,5 @@
+import { getData } from '@/actions/data';
 import { ImageResponse } from 'next/og'
-import data from '@/data.json'
 // Image metadata
 export const size = {
     width: 1200,
@@ -11,6 +11,7 @@ export const contentType = 'image/png'
 // Image generation
 export default async function Image({ params }) {
     const { projectId } = await params;
+    const data = await getData();
     const project = data.projects.find(p => p.id === projectId);
 
     return new ImageResponse(
@@ -29,7 +30,7 @@ export default async function Image({ params }) {
                     color: 'white',
                 }}
             >
-                <img src="https://ayaz-one.vercel.app/ayaz.png" style={{
+                <img src={`${process.env.NEXT_PUBLIC_BASE_URL}/ayaz.png`} style={{
                     height: "300",
                     width: "300",
                 }} />

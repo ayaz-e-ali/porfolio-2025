@@ -27,7 +27,7 @@ export default async function Image({ params }) {
                     color: 'white',
                 }}
             >
-                <img src="https://ayaz-one.vercel.app/ayaz.png" style={{
+                <img src={`${process.env.NEXT_PUBLIC_BASE_URL}/ayaz.png`} style={{
                     height: "300",
                     aspectRatio: "1/1",
                 }} />
